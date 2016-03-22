@@ -6,8 +6,8 @@ body{
   font-family: 'Dosis',sans-serif;
 }
 
-@media all and (max-width:400px) {
-    h1{font-size: 12px;}
+@media all and (max-width:1400px) {
+    .logo h1{font-size: 12px;}
 
 }
 
@@ -27,6 +27,52 @@ color:black;
 
 @media all and (max-width:600px) {
     h2{font-size: 16px;}
+}
+
+.logo-row-fix{
+  margin-left: 0;
+  margin-right: 0;
+}
+.nav-container-fix{
+  width:100%;
+  padding:0;
+  background: #A60303;
+  position:fixed;
+  z-index: 99999;
+
+}
+.nav-bar{
+
+  width:100%;
+}
+.logo{
+
+    background: #A60303;
+    padding: 0;
+    margin: 0;
+    padding-top: 14px;
+    padding-left: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.logo a{
+  height:100%;
+  width: 100%;
+}
+
+.nav-bar a:hover{
+  color:#000000;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.logo img{
+
+    margin:0;
+margin-bottom:10px;
 }
 
 .wrapper-top hr{
@@ -49,8 +95,8 @@ label{
 position: fixed;
 float:right;
 right:0;
-z-index: 999999;
-width:100%;
+
+
 }
 
 .menu-main-navigation-container ul{
@@ -59,9 +105,9 @@ margin: 0;
 padding: 0;
 overflow: hidden;
 float:right;
-background: #CC0000;
-opacity: 0.8;
-width:100%;
+background: #A60303;
+
+
 
 }
 
@@ -74,17 +120,17 @@ float:left;
   display: block;
      color: white;
      text-align: center;
-     padding: 14px 16px;
+     padding: 9px 12px;
      text-decoration: none;
      text-transform: uppercase;
-     font-size:14px;
+     font-size:12px;
      font-weight:bolder;
 
 }
 
 .menu-main-navigation-container a:hover{
-  color:black;
-  font-size: 15px;
+  color:#000000;
+  font-size: 13px;
   transition-duration: 1s;
 }
 .headerbanner{
@@ -206,7 +252,7 @@ padding-top:10px;
     position: relative;
     z-index: 10;
     height: 100%;
-    margin-top: -3em;
+    margin-top: 0em;
     background-color:#23282d;
     color:white;
 

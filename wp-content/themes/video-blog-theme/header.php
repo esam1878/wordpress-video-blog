@@ -10,5 +10,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="container nav-container-fix">
+<div class="row logo-row-fix">
+<nav class="nav-bar col-xs-12"><a href="http://localhost:8888" class="logo"> <img src="http://localhost:8888/wp-content/uploads/2016/03/Untitled-1-1.png"/>UNITED VIDEOS</a> </nav>
 
-  <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
+
+    <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
+</div>
+</div>
