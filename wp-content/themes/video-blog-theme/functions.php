@@ -1,7 +1,9 @@
 <?php
 function awesome_script_enqueue() {
 //css
+
 wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6', 'all');
+wp_enqueue_style('hovereffect', get_template_directory_uri() . '/css/hover.css', array(), '', 'all');
 wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/videoblog.css', array(), '1.0.0', 'all');
 
 //js

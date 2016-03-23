@@ -24,8 +24,16 @@
 </div>
 
 
-    <?php endwhile;
-  endif;
+    <?php endwhile;?>
+
+<div class=" col-xs-6 text-left ">
+  <div class="next-button hvr-sweep-to-left"><?php next_posts_link('<< Older Videos'); ?></div>
+</div>
+
+<div class=" col-xs-6 text-right">
+  <div class="next-button hvr-sweep-to-right"><?php previous_posts_link('Newer Videos >>'); ?></div>
+</div>
+  <?endif;
 
    ?>
    <div class="button-up">

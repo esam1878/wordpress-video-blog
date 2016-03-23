@@ -219,7 +219,7 @@ padding-top:10px;
 .post-decoration h2{
   border-radius: 2px;
   text-transform: uppercase;
-  background: #CC0000;
+  background: #A60303;
     color: white;
     opacity: 0.8;
     padding-left: 4px;
@@ -354,10 +354,10 @@ border: none;
 }
 
 .hide{
-
+  margin:0 auto;
   padding-top: 10px;
-    float: right;
-    padding-right: 20px;
+
+
     display:table ! important;
 }
 
@@ -381,4 +381,18 @@ border: none;
 
   color: white;
   text-decoration: none;
+}
+
+.next-button a{
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  transition-duration: 1s;
+  padding: 6px;
+
+
+}
+.next-button a:hover{
+
+  color: white;
 }
