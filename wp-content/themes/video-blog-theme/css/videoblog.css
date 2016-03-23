@@ -1,5 +1,13 @@
+html{
+
+  position: relative;
+min-height: 100%;
+}
+
+
 body{
-  margin:0;
+
+  margin-bottom: 80px;
   padding:0;
   background: #FFFFFF;
   color:black;
@@ -248,11 +256,12 @@ padding-top:10px;
 
 
 .footer-container {
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 100%;
-    margin-top: 0em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
     background-color:#23282d;
     color:white;
 
