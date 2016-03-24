@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="headerbanner"><img src="http://localhost:8888/wp-content/uploads/2016/03/Untitled-1.jpg"/></div>
+<!-- <div class="headerbanner"><img src="http://localhost:8888/wp-content/uploads/2016/03/Untitled-1.jpg"/></div>-->
 <?php if( have_posts() ):
 
       while( have_posts() ): the_post(); ?>
@@ -8,15 +8,19 @@
       <div class="main-container main-container_fullheight">
       <div class="container box-fix post-decoration">
 
+      <div class="post-header">
       <h2><?php the_title(); ?></h2>
-      <h4>Posted on <?php the_time('F j, Y') ?> <?php the_time('g:i a') ?></h4>
+      <h4>Posted on <?php the_time('F j, Y') ?></h4>
+      </div>
 
-      <h3><?php the_content(); ?></h3>
-      <br>
-      <hr>
 
 </div>
 
+</div>
+<div class="main-container main-container_fullheight post-footer">
+<?php the_content(); ?>
+<br>
+<hr>
 </div>
 </div>
   <hr>
@@ -26,11 +30,11 @@
 
     <?php endwhile;?>
 
-<div class=" col-xs-6 text-left ">
+<div class=" col-xs-6 text-left next-button-container">
   <div class="next-button hvr-sweep-to-left"><?php next_posts_link('<< Older Videos'); ?></div>
 </div>
 
-<div class=" col-xs-6 text-right">
+<div class=" col-xs-6 text-right next-button-container">
   <div class="next-button hvr-sweep-to-right"><?php previous_posts_link('Newer Videos >>'); ?></div>
 </div>
   <?endif;
